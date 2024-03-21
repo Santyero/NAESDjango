@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "paginas.apps.PaginasConfig", # ativar app
     "cadastros.apps.CadastrosConfig", # Ativar app
+    "estagio.apps.EstagioConfig",
+    "estudante.apps.EstudanteConfig",
+    "rest_framework"
+    
 ]
 
 MIDDLEWARE = [
