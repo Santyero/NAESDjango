@@ -11,3 +11,6 @@ class Estagio(models.Model):
     carga_horaria = models.DecimalField(max_digits=5, decimal_places=2)
     protocolado_por = models.ForeignKey(User, on_delete=models.PROTECT)
     data_protocolo = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self) -> str:
+        return f'{self.empresa} - {self.estudante}'
